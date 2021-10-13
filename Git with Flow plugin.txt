@@ -74,3 +74,46 @@ Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
 To https://github.com/Skysamara/gitflow.git
    bc2ff45..7189c7c  feature/myfeature -> feature/myfeature
 
+************ Зкончили разработку фичи **********************
+feature finish:
+- перешли оратно в ветку devlop
+- в develop перенесены все изменения из ветки "feature/myfeature"
+- удалена ветка "feature/myfeature" 
+
+c:\_my\_Courses\gitflow>git flow feature finish myfeature
+Switched to branch 'develop'
+Merge made by the 'recursive' strategy.
+ Git with Flow plugin.txt | 76 ++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 76 insertions(+)
+ create mode 100644 Git with Flow plugin.txt
+To https://github.com/Skysamara/gitflow.git
+ - [deleted]         feature/myfeature
+Deleted branch feature/myfeature (was 34eb549).
+
+Summary of actions:
+- The feature branch 'feature/myfeature' was merged into 'develop'
+- Feature branch 'feature/myfeature' has been locally deleted; it has been remotely deleted from 'origin'
+- You are now on branch 'develop'
+
+************ Отправляем на удаленный сервер *************
+
+c:\_my\_Courses\gitflow>git push origin develop
+Enumerating objects: 12, done.
+Counting objects: 100% (12/12), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (12/12), 2.28 KiB | 1.14 MiB/s, done.
+Total 12 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), done.
+remote:
+remote: Create a pull request for 'develop' on GitHub by visiting:
+remote:      https://github.com/Skysamara/gitflow/pull/new/develop
+remote:
+To https://github.com/Skysamara/gitflow.git
+ * [new branch]      develop -> develop
+
+
+
+
+
+
